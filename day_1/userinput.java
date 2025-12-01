@@ -1,18 +1,18 @@
 package day_1;
 
 import java.util.Scanner;
-
-public class userinput{
+ class Userinput {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Asking user for input
-        System.out.print("Enter a number: ");
-        int number = scanner.nextInt();
+        System.out.print("Enter your namx: ");
+        String name = scanner.nextLine();
 
-        // Printing the number
-        System.out.println(number);
+        System.out.print("Enter your age: ");
+        int age = scanner.nextInt();
 
-        scanner.close(); 
+        System.out.println("Hello, " + name + "! You are " + age + " years old.");
+
+        scanner.close();
     }
-}        
+}
