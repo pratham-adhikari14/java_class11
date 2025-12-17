@@ -7,11 +7,11 @@ class Guessnum {
     }
     public static void main(String [] args)
  void Guessnum(){
-    
+    System.out.println("enter a number")
     scanner input = new scanner(System.in)
  }
    while(true){
-    System.out.println("enter a number");
+  
     num2 = input.nextint();
 
     if(userInput>num){
