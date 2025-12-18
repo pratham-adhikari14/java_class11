@@ -25,17 +25,18 @@ import java.util.Scanner;
 
         while(working){
             if(secrectNumber < userInput){
-                System.out.println("You Guessed is high");
+                System.out.println("Your number is higher");
                getNumber();
 
             } else if(secrectNumber > userInput){
-                System.out.println("Your Guess is Low");
+                System.out.println("Your number is Lower");
                 getNumber();
 
             } else if(secrectNumber == userInput){
-                System.out.println("Your Guess is correct");
+                System.out.println("Your number is correct");
                 getNumber();
             }
+            
             else {
                 System.out.println("Invalid Input");
                 getNumber();
@@ -44,3 +45,7 @@ import java.util.Scanner;
         }
     }
  }
+
+ /*(counter=0 ; counter = userInuput - secnum = <20 is close ,
+  counter = userInuput - secnum = <5 is extreamly close )
+  
