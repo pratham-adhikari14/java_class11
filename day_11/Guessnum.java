@@ -1,31 +1,33 @@
+import java.util.Scanner;
+
 class Guessnum {
     int num;
-    int userInput;
 
     Guessnum(int num) {
-       this.num = num;
+        this.num = num;
     }
-    public static void main(String [] args)
- void Guessnum(){
-    System.out.println("enter a number")
-    scanner input = new scanner(System.in)
- }
-   while(true){
-  
-    num2 = input.nextint();
 
-    if(userInput>num){
-        System.out.println("your number"+ userInput +"number is bigger");
+    void playGame() {
+        Scanner input = new Scanner(System.in);
+
+        while (true) {
+            System.out.print("Enter a number: ");
+            int userInput = input.nextInt();
+
+            if (userInput > num) {
+                System.out.println("Your number " + userInput + " is bigger");
+            } else if (userInput < num) {
+                System.out.println("Your number " + userInput + " is smaller");
+            } else {
+                System.out.println("Your given number is equal");
+                break;
+            }
+        }
+        input.close();
     }
-    else if (userInput<num){
-        System.out.println("your number" + userInput+ "number is smaller");
+
+    public static void main(String[] args) {
+        Guessnum game = new Guessnum(14);
+        game.playGame();
     }
-    else{
-        System.out.println("your given number is equal")
-    }
-   }
 }
-
-
-
-
